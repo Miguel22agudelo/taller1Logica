@@ -21,3 +21,20 @@
     font-family: 'Long Cang', cursive;
     color: dimgray;
 }
+.h1Pagina2{
+    font-weight: bold;
+    color: darkslategray;
+}
+.subtitlePagina2{
+    font-weight: bold;
+}
+.parrafoPagina2{
+    font-style: italic;
+    font-family: 'Long Cang', cursive;
+    color: darkolivegreen;
+}
+.segundoParrafoPagina2{
+    font-style: italic;
+    font-family: 'Long Cang', cursive;
+    color: dimgray;
+}
