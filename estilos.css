@@ -1,0 +1,23 @@
+.h1Index{
+    font-family: 'Long Cang', cursive;
+}
+.parrafoIndex{
+    font-size: 24px;
+}
+.footerIndex{
+    background-color: darkgray;
+    text-align: center;
+}
+.h1Pagina1{
+    font-weight: bold;
+    color: grey;
+}
+.subtitlePagina1{
+    font-weight: bold;
+    color: darksalmon;
+}
+.parrafoPagina1{
+    font-style: italic;
+    font-family: 'Long Cang', cursive;
+    color: dimgray;
+}
