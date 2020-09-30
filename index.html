@@ -4,33 +4,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <title>mindfulnessProject</title>
 </head>
 <body>
     <header>
-        <h1 class="h1Index">mindfulness</h1>
-        <nav>
-            <ol>
-                <li><a href="https://www.mindfulness-salud.org/mindfulness/que-es-mindfulness/" target="_blank">Sociedad Mindfulness y Salud</a></li>
-                <li><a href="https://psycnet.apa.org/home" target="_blank">Journals</a></li>
-                <li><a href="pagina1.html">Acercamiento Científico</a></li>
-                <li><a href="pagina2.html">¿Cómo se aprende?</a></li>
-                <li><a href="registro.html">Registro</a></li>
-            </ol>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand h1Index" href="index.html">mindfulness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">¿Qué es?<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina1.html">Acercamiento Científico</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">¿Cómo se aprende? </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ¿Dónde aprender?
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" target= "_blank" href="https://www.mindfulness-salud.org/mindfulness/que-es-mindfulness/">Sociedad Mindfulness y Salud</a>
+                    <a class="dropdown-item" target="_blank" href="https://psycnet.apa.org/home">Journals</a>
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link enabled" href="registro.html" tabindex="-1" aria-disabled="true">Registro</a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+        
         <hr>
     </header>
     <main>
-        <img src="img/firstImage.png" alt="firstImage">
-        <hr>
-        <h2>¿Qué es mindfulness?</h2>
-        <p class="parrafoIndex">Mindfulness ha sido traducida al español en diferentes formas, todas compuestas a falta de una palabra que de con el significado original. Las traducciones más comunes son Atención Plena, Plena Conciencia, Presencia Mental y Presencia Plena/Conciencia Abierta entre otras. Emplearemos la traducción más utilizada en este momento que es "Atención Plena" y, en la generalidad de los casos, directamente el vocablo inglés Mindfulness.</p>
-        <hr>
+      
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/desktopPhoto.jpg" class="d-block w-100" alt="firstImage">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jack Kornfield</h5>
+              <p>Al final, son tres las cosas que importan, cómo hemos vivido, cómo hemos amado y cómo hemos aprendido a dejar ir.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/woodImage.jpg" class="d-block w-100" alt="secondImage">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dalai Lama</h5>
+              <p>Nunca se puede obtener la paz en el mundo exterior hasta que no estemos en paz con nosotros mismos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/flamingImage.jpg" class="d-block w-100" alt="thirdImage">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Marco Aurelio</h5>
+              <p>La perfección del carácter es la siguiente: vivir cada día como si fuera el último, sin prisa, sin apatía, sin pretensión.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="container">
+        <div class="row Justify-content-around">
+          <div class="col-12 col-md-6 Justify-content-around">
+            <h1 class="h1Index">Qué es Mindfulness</h1>
+            <p class="text-justify">La Sociedad Mindfulness y Salud lleva más de 10 años dedicados a la práctica y enseñanza de Mindfulness en el ámbito asistencial, científico y profesional. ¿Qué es exactamente “Mindfulness”? Si bien no hay una traducción exacta del término, pero habitualmente se traduce como "atención plena". Se trata de un estado de conciencia que nos permite relacionarnos con la realidad del momento de manera más amable, menos reactiva y más conciente.<p>
+          </div>
+          <div class="col-12 col-md-6 Justify-content-around">
+            <h1 class="h1Index">Cómo se aprende</h1>
+            <p class="text-justify">Una de las mejores formas de entrenar Mindfulness es participando de un curso de meditación mindfulness, como el Programa de Reducción de Estrés o alguno de nuestros talleres. Las actividades que ofrece la Sociedad proponen tomar un rol activo e incorporar herramientas para manejar el estrés y cuidar la salud, potenciando cualidades humanas como la ecuanimidad, la compasión y el sentido de interconexión.</p>
+          </div>
+        </div>
+      </div>
+
     </main>
-    <footer class="footerIndex">
-        <p>Copyright © Miguel Ángel Agudelo Lopera</p>
-        <p>All rights reserved</p>
-        <p>2020, Medellín</p>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        
+        <nav class="row">
+          <a href="#" class="col-4 text-reset text-uppercase d-flex align-items-center">
+            <h2 class="h1Index img-logo mr-2">mindfulness</h2>
+          </a>
+
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Resource</li>
+            <li><a href="" class="text-reset">Sociedad Mindfulness y Salud</a></li>
+            <li><a href="" class="text-reset">Journals</a></li>
+          </ul>
+          
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+            <li class="d-flex justify-content-between">
+              <a href="https://www.facebook.com/miguelangel2412" target="_blank" class="text-reset"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/miguelangel2245" target="_blank" class="text-reset"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/miguelangel22/?hl=es-la" target="_blank" class="text-reset"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-reset"><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </footer>
 </body>
 </html>

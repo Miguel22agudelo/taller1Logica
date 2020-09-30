@@ -4,31 +4,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <title>aprendizaje</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>mindfulnessProject</title>
 </head>
 <body>
     <header>
-        <h1 class="h1Pagina2">¿Cómo se aprende?</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand h1Index" href="index.html">mindfulness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">¿Qué es?<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina1.html">Acercamiento Científico</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="pagina2.html">¿Cómo se aprende? </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ¿Dónde aprender?
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" target= "_blank" href="https://www.mindfulness-salud.org/mindfulness/que-es-mindfulness/">Sociedad Mindfulness y Salud</a>
+                    <a class="dropdown-item" target="_blank" href="https://psycnet.apa.org/home">Journals</a>
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link enabled" href="registro.html" tabindex="-1" aria-disabled="true">Registro</a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
+        
         <hr>
     </header>
     <main>
-        <img src="img/thirdImage.jpg" alt="thirdImage">
-        <h2 class="subtitlePagina2">Meditación Científica</h2>
-        <p class="parrafoPagina2">Una de las mejores formas de entrenar Mindfulness es participando de un curso de meditación mindfulness, como el Programa de Reducción de Estrés o alguno de nuestros talleres. Las actividades que ofrece la Sociedad proponen tomar un rol activo e incorporar herramientas para manejar el estrés y cuidar la salud, potenciando cualidades humanas como la ecuanimidad, la compasión y el sentido de interconexión.
-         </p>
-         <hr>
-        <audio src="img/audioReynoso.mp3" controls>audioReynoso</audio>
-        <p class="segundoParrafoPagina2">Existen distintas investigaciones que apoyan la práctica de la atención plena como método para la reducción del estrés, la ansiedad y la depresión, así como soporte para el tratamiento de distintos tipos de enfermedades3.
+      
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/natureImage.jpg" class="d-block w-100" alt="#">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jack Kornfield</h5>
+              <p>Al final, son tres las cosas que importan, cómo hemos vivido, cómo hemos amado y cómo hemos aprendido a dejar ir.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/abstractImage.jpg" class="d-block w-100" alt="#">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dalai Lama</h5>
+              <p>Nunca se puede obtener la paz en el mundo exterior hasta que no estemos en paz con nosotros mismos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/birdImage.jpg" class="d-block w-100" alt="#">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Marco Aurelio</h5>
+              <p>La perfección del carácter es la siguiente: vivir cada día como si fuera el último, sin prisa, sin apatía, sin pretensión.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
-            El primer programa que incorporó el mindfulness como herramienta fue el Mindfulness-Based Stress Reduction (MBSR), —en español reducción del estrés basada en la atención plena—, creado por Jon Kabat-Zinn. Sobre la base de este programa se crearon otros, llamados Mindfulness-Based Interventions (MBIs), dirigidos hacia grupos más específicos,1​ como la Mindfulness-Based Cognitive Therapy (MBCT), —terapia cognitiva basada en la atención plena—, diseñada para pacientes con depresión mayor con alto riesgo de recaída y recurrencia.4​
-            
-            Una de las aplicaciones del mindfulness se dirigió a preparar a los militares estadounidenses para minimizar los trastornos que sufren durante el combate y sus secuelas, como el trastorno por estrés postraumático, la ansiedad o la depresión. El Mindfulness-based Mind Fitness Training, MMFT, o M-fit —entrenamiento mental basado en mindfulness— se enseña a los militares durante las semanas previas a un despliegue. Se ha usado para entrenar a las tropas que participaron en las guerras de Afganistán e Irak.</p>
-            <hr>
+      <div class="container">
+        <div class="row Justify-content-around">
+          <div class="col-12 col-md-6 Justify-content-around">
+            <h1 class="h1Index">Meditación Científica</h1>
+            <p class="text-justify">Una de las mejores formas de entrenar Mindfulness es participando de un curso de meditación mindfulness, como el Programa de Reducción de Estrés o alguno de nuestros talleres. Las actividades que ofrece la Sociedad proponen tomar un rol activo e incorporar herramientas para manejar el estrés y cuidar la salud, potenciando cualidades humanas como la ecuanimidad, la compasión y el sentido de interconexión.<p>
+          </div>
+          <div class="col-12 col-md-6 Justify-content-around">
+            <h1 class="h1Index">Más Investigaciones</h1>
+            <p class="text-justify">Existen distintas investigaciones que apoyan la práctica de la atención plena como método para la reducción del estrés, la ansiedad y la depresión, así como soporte para el tratamiento de distintos tipos de enfermedades3.
+
+                El primer programa que incorporó el mindfulness como herramienta fue el Mindfulness-Based Stress Reduction (MBSR), —en español reducción del estrés basada en la atención plena—, creado por Jon Kabat-Zinn. Sobre la base de este programa se crearon otros, llamados Mindfulness-Based Interventions (MBIs), dirigidos hacia grupos más específicos,1​ como la Mindfulness-Based Cognitive Therapy (MBCT), —terapia cognitiva basada en la atención plena—, diseñada para pacientes con depresión mayor con alto riesgo de recaída y recurrencia.</p>
+          </div>
+        </div>
+      </div>
+
     </main>
-    <footer>
-        <p>Copyright © Miguel Ángel Agudelo Lopera</p>
-        <p>All rights reserved</p>
-        <p>2020, Medellín</p>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        
+        <nav class="row">
+          <a href="index.html" class="col-4 text-reset text-uppercase d-flex align-items-center">
+            <h2 class="h1Index img-logo mr-2">mindfulness</h2>
+          </a>
+
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Resource</li>
+            <li><a href="" class="text-reset">Sociedad Mindfulness y Salud</a></li>
+            <li><a href="" class="text-reset">Journals</a></li>
+          </ul>
+          
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+            <li class="d-flex justify-content-between">
+              <a href="https://www.facebook.com/miguelangel2412" target="_blank" class="text-reset"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/miguelangel2245" target="_blank" class="text-reset"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/miguelangel22/?hl=es-la" target="_blank" class="text-reset"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-reset"><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </footer>
 </body>
 </html>

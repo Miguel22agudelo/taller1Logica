@@ -1,28 +1,101 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>registro</title>
 </head>
-<body>
+<body > 
     <header>
-        <h1>Formulario de Registro</h1>
-        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand h1Index" href="#">mindfulness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">¿Qué es?<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina1.html">Acercamiento Científico</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">¿Cómo se aprende? </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ¿Dónde aprender?
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" target= "_blank" href="https://www.mindfulness-salud.org/mindfulness/que-es-mindfulness/">Sociedad Mindfulness y Salud</a>
+                    <a class="dropdown-item" target="_blank" href="https://psycnet.apa.org/home">Journals</a>
+                    
+                  </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Registro<span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+              
+            </div>
+          </nav>
     </header>
 
-    <main>
-        <nav>
-            <form action="formularioRegistro">
-                <input type="email" placeholder="email" id="email" name="email">
-                <input type="password" placeholder="password" id="pasword" name="password">
-                <input type="text" placeholder="Nombres y Apellidos" id="nombresApellidos" name="nombresApellidos">
-                <input type="submit">
+    <main class="container">
+      <h1 class="text-center h1Index">Formulario de Registro</h1>
+      <main>
+        <div class="container justify-content-center">
+           
+            <form class="mt-5 justify-content-center">
+                <div class="form-row justify-content-center text-center">
+                    <div class="col-md-4">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Apellidos</label>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center text-center">
+                    <div class="col-md-4">
+                        <label>Ciudad</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Teléfono</label>
+                      <input type="number" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center text-center">
+                  <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                </div>
+                                            
+               <div class="col-md-12 justify-content-center row mt-5">
+                        <button type="submit" class="btn btn-warning font-weight-bold justify-content-center">Registrarse</button>
+                    </div>
+                </div>      
             </form>
-        </nav>
+        </div>
+    </main>
         <nav>
             <hr>
-            <h2>Declaración de Privacidad</h2>
-            <p>
+            <h2 class="text-center">Declaración de Privacidad</h2>
+            <p class="text-justify">
                 Gracias por su visita a nuestra página web y por su interés en nuestra empresa. Entendemos la privacidad de los datos como una característica de calidad orientada al cliente. La protección de sus datos personales y la protección de sus derechos personales son importantes para nosotros.
                 
                 Con esta declaración de privacidad queremos informar a todos los visitantes de nuestra página web de forma transparente sobre el tipo, el alcance y la finalidad de los datos personales recopilados, utilizados y sometidos a tratamiento por nosotros, así como informarle sobre los derechos que le asisten.
@@ -46,10 +119,35 @@
        <hr>
     </main>
     
-    <footer>
-        <p>Miguel Ángel Agudelo Lopera</p>
-        <p>miguelangelagudelolopera@gmail.com</p>
-        <p>Medellín, Septiembre 8 de 2020</p>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        
+        <nav class="row">
+          <a href="index.html" class="col-4 text-reset text-uppercase d-flex align-items-center">
+            <h2 class="h1Index img-logo mr-2">mindfulness</h2>
+          </a>
+
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Resource</li>
+            <li><a href="" class="text-reset">Sociedad Mindfulness y Salud</a></li>
+            <li><a href="" class="text-reset">Journals</a></li>
+          </ul>
+          
+          <ul class="col-4 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+            <li class="d-flex justify-content-between">
+              <a href="https://www.facebook.com/miguelangel2412" target="_blank" class="text-reset"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/miguelangel2245" target="_blank" class="text-reset"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/miguelangel22/?hl=es-la" target="_blank" class="text-reset"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-reset"><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </footer>
 </body>
 </html>
